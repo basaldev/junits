@@ -1,0 +1,34 @@
+{
+  "name": "junit",
+  "version": "0.0.1",
+  "description": "Utility for all Japanese units",
+  "main": "src/junit.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "author": "Marty",
+  "license": "MIT",
+  "devDependencies": {
+    "lint-staged": "^8.1.5",
+    "pre-commit": "^1.2.2",
+    "prettier": "1.17.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^5.4.3",
+    "typescript": "^3.4.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "{src/**/*.{ts,tsx}": [
+      "prettier --single-quote --print-width 120 --trailing-comma es5 --write",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ]
+}

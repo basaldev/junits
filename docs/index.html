@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jUnit</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Noto Serif JP', serif;
+      text-align: center;
+    }
+    code {
+      display: block;
+      width: 80%;
+      padding: 15px;
+      margin: auto;
+      background: #fafafa;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px 15px;
+      background: #fafafa;
+      text-align: left;
+    }
+    header, section {
+      margin-bottom: 100px;
+    }
+    ul {
+      display: inline-block;
+    }
+    li {
+      text-align: left;
+    }
+    table {
+      margin: auto;
+      width: 80%;
+    }
+    h1 {
+      position: relative;
+      font-size: 5em;
+    }
+    h1 > small {
+      position: absolute;
+      font-size: 0.15em;
+    }
+      h1::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 1em;
+        background: red;
+        transform: translate(-50%, -50%);
+        perspective: 1000;
+        z-index: -1;
+      }
+  </style>
+  <script src="../dist/junit.js"></script>
+</head>
+<body>
+  <header>
+    <h1>jUnit<small>v0.0.1</small></h1>
+    <p>日本語に特化した軽量単位ユーティリティライブラリ</p>
+    <ul>
+      <li><a href="#install">インストール</a></li>
+      <li><a href="#usage">使い方</a></li>
+      <li><a href="#datetime">日付・時間</a></li>
+      <li><a href="#number">数字・通貨</a></li>
+      <li><a href="#area">面積</a></li>
+    </ul>
+  </header>
+
+  <section id="install">
+    <h2>インストール</h2>
+    <code>
+      npm install junit
+    </code>
+  </section>
+
+  <section id="usage">
+    <h2>使い方</h2>
+    <code>
+      import * as jUnit from 'junit';
+    </code>
+  </section>
+
+  <section id="datetime">
+    <h2>日付・時間</h2>
+    <h3>書式</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().seireki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().seireki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().wareki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().wareki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().tanWareki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().tanWareki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().alphaWareki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().alphaWareki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().tsuki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().tsuki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().hi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().hi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().yobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().yobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().tanYobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().tanYobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().ji().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().ji().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().fun().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().fun().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().tanYobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().tanYobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().seireki().tsuki().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().seireki().tsuki().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().tsuki().hi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().tsuki().hi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().seireki().tsuki().hi().tanYobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().seireki().tsuki().hi().tanYobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().wareki().tsuki().hi().haku().yobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().wareki().tsuki().hi().haku().yobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().seireki().tsuki().hi().haku().ji().fun().tanYobi().ijo();</td>
+        <td><script>document.write(jUnit.hizuke().seireki().tsuki().hi().haku().ji().fun().tanYobi().ijo());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke(new Date(1989, 0, 8)).wareki().tsuki().niketa().hi().niketa().ijo();</td>
+        <td><script>document.write(jUnit.hizuke(new Date(1989, 0, 8)).wareki().tsuki().niketa().hi().niketa().ijo());</script></td>
+      </tr>
+    </table>
+
+    <h3>変換</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().ha(new Date(2000, 0, 1)).yoriMae();</td>
+        <td><script>document.write(jUnit.hizuke().ha(new Date(2100, 0, 1)).yoriMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke().ha(new Date(2000, 0, 1)).yoriAto();</td>
+        <td><script>document.write(jUnit.hizuke().ha(new Date(2000, 0, 1)).yoriAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(2000, 0, 1)).toOnaji();</td>
+        <td><script>document.write(jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(2000, 0, 1)).toOnaji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(2001, 0, 1)).toOnajiKaMae();</td>
+        <td><script>document.write(jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(2001, 0, 1)).toOnajiKaMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).toOnajiKaAto();</td>
+        <td><script>document.write(jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).toOnajiKaAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).to(new Date(2001, 0, 1)).noAida();</td>
+        <td><script>document.write(jUnit.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).to(new Date(2001, 0, 1)).noAida());</script></td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="number">
+    <h2>数字・通貨</h2>
+    <p>開発中</p>
+  </section>
+
+  <section id="area">
+    <h2>面積</h2>
+    <p>開発中</p>
+  </section>
+
+  <footer>
+    <small>&copy;2019 ExoDev</small>
+  </footer>
+</body>
+</html>

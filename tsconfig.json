@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*"]
+    },
+    "lib": ["es6", "dom", "esnext"],
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "moduleResolution": "node"
+  }
+}
