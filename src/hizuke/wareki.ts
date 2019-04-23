@@ -12,13 +12,14 @@ export default function wareki(date: Date, type = 'full', unit: string = '年'):
     return (
       toOnajiKaAto(date, new Date(start[0], start[1], start[2])) &&
       yoriMae(date, new Date(nextStart[0], nextStart[1], nextStart[2]))
-    )
+    );
   });
   if (!gengo) {
+    // tslint:disable-next-line:no-console
     console.warn(`西暦${fullyear}年に対応する元号が見つかりません。`);
     return seireki(date, unit);
   }
   const year = fullyear - gengo.start[0] + 1;
-  const wareki = year === 1 ? '元' : year;
-  return `${gengo[type]}${wareki}${unit}`;
+  const jaYear = year === 1 ? '元' : year;
+  return `${gengo[type]}${jaYear}${unit}`;
 }

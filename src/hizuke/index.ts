@@ -22,7 +22,7 @@ export default function hizuke(date: Date = new Date(), state = []) {
       args[1] + `00000${args[2]}`.slice(-value) + args[3]);
     return hizuke(date, state);
   }
-  
+
   function output() {
     return state.join('');
   }
@@ -39,9 +39,9 @@ export default function hizuke(date: Date = new Date(), state = []) {
     ji: (unit: string) => setState(ji(date, unit)),
     fun: (unit: string) => setState(fun(date, unit)),
     byo: (unit: string) => setState(byo(date, unit)),
-    haku:(value: string) =>  setState(haku(value)),
+    haku: (value: string) =>  setState(haku(value)),
     niketa: () => fixDigit(2),
     ijo: output,
-    ha:(date2: Date) => ha(date, date2),
-  }
+    ha: (date2: Date) => ha(date, date2),
+  };
 }

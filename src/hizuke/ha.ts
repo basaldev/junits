@@ -13,5 +13,5 @@ export default function ha(date1: Date, date2: Date) {
     toOnajiKaMae: () => toOnajiKaMae(date1, date2),
     toOnajiKaAto: () => toOnajiKaAto(date1, date2),
     to: (date3: Date) => ({ noAida: () => noAida(date1, date2, date3) }),
-  }
+  };
 }
