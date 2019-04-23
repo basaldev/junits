@@ -25,8 +25,8 @@
   },
   "dependencies": {},
   "lint-staged": {
-    "src/**/*.ts": [
-      "prettier --single-quote --print-width 120 --trailing-comma es5 --write",
+    "*.ts": [
+      "prettier --write",
       "tslint --fix",
       "git add"
     ]
