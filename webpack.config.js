@@ -1,15 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/junit.ts',
+  entry: './src/junits.ts',
 
   devtool: 'source-map',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'junit.js',
-    library: 'jUnit',
+    filename: 'junits.js',
+    library: 'jUnits',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     globalObject: 'this'

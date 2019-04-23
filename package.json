@@ -1,8 +1,8 @@
 {
-  "name": "junit",
+  "name": "junits",
   "version": "0.0.1",
   "description": "Utility for all Japanese units",
-  "main": "dist/junit.js",
+  "main": "dist/junits.js",
   "scripts": {
     "lint": "tslint -c tslint.json src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exodevhub/junit.git"
+    "url": "git+https://github.com/exodevhub/junits.git"
   },
   "bugs": {
-    "url": "https://github.com/exodevhub/junit/issues"
+    "url": "https://github.com/exodevhub/junits/issues"
   },
-  "homepage": "https://exodevhub.github.io/junit/",
+  "homepage": "https://exodevhub.github.io/junits/",
   "keywords": [
     "unit",
     "date",
