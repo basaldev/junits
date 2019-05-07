@@ -5,14 +5,13 @@ import yoriMae from './yoriMae';
 
 const futureGengo = { start: [99999, 11, 31] };
 
-export default function wareki(date: Date, type = 'full', unit: string = '年'): string {
+type Type = 'full' | 'short' | 'alpha';
+
+export default function wareki(date: Date, type: Type = 'full', unit: string = '年'): string {
   const fullyear = date.getFullYear();
   const gengo = consts.date.gengo.find(({ start }, index) => {
     const { start: nextStart } = consts.date.gengo[index - 1] || futureGengo;
-    return (
-      toOnajiKaAto(date, new Date(start[0], start[1], start[2])) &&
-      yoriMae(date, new Date(nextStart[0], nextStart[1], nextStart[2]))
-    );
+    return toOnajiKaAto(date, new Date(start[0], start[1], start[2])) && yoriMae(date, new Date(nextStart[0], nextStart[1], nextStart[2]));
   });
   if (!gengo) {
     // tslint:disable-next-line:no-console

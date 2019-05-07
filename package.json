@@ -5,7 +5,7 @@
   "main": "dist/junits.js",
   "scripts": {
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "build": "webpack -p",
     "start": "webpack-dev-server"

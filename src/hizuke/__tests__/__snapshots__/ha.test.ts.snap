@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ha should return proper members 1`] = `
+Object {
+  "to": Any<Function>,
+  "toOnaji": Any<Function>,
+  "toOnajiKaAto": Any<Function>,
+  "toOnajiKaMae": Any<Function>,
+  "yoriAto": Any<Function>,
+  "yoriMae": Any<Function>,
+}
+`;

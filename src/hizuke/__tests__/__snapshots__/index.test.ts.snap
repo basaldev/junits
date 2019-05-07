@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hizuke should call alphaWareki 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call byo 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call fun 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call haku 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call hi 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call ji 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call niketa/fixDigit 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call seireki 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call tanWareki 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call tanYobi 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call tsuki 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call wareki 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should call yobi 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;
+
+exports[`hizuke should return proper members 1`] = `
+Object {
+  "alphaWareki": Any<Function>,
+  "byo": Any<Function>,
+  "fun": Any<Function>,
+  "ha": Any<Function>,
+  "haku": Any<Function>,
+  "hi": Any<Function>,
+  "ijo": Any<Function>,
+  "ji": Any<Function>,
+  "niketa": Any<Function>,
+  "seireki": Any<Function>,
+  "tanWareki": Any<Function>,
+  "tanYobi": Any<Function>,
+  "tsuki": Any<Function>,
+  "wareki": Any<Function>,
+  "yobi": Any<Function>,
+}
+`;

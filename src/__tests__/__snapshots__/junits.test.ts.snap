@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jUnits should be defined 1`] = `
+Object {
+  "hizuke": [Function],
+}
+`;
