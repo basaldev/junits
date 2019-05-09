@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const package = require('./package');
 
 module.exports = {
   entry: './src/junits.ts',
@@ -26,6 +28,12 @@ module.exports = {
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
     ]
   },
+
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: `junits v${package.version}`
+    })
+  ],
 
   devServer: {
     hot: true,
