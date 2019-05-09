@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const package = require('./package');
 
 module.exports = {
   entry: './src/junits.ts',
@@ -7,7 +9,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/dist',
     filename: 'junits.js',
     library: 'jUnits',
     libraryTarget: 'umd',
@@ -27,10 +29,17 @@ module.exports = {
     ]
   },
 
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: `junits v${package.version}`
+    })
+  ],
+
   devServer: {
     hot: true,
     inline: true,
     historyApiFallback: true,
     contentBase: path.join(__dirname, 'docs'),
+    openPage: '/docs'
   }
 };

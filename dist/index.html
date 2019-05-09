@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jUnits</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Noto Serif JP', serif;
+      text-align: center;
+    }
+    code {
+      display: block;
+      width: 80%;
+      padding: 15px;
+      margin: auto;
+      background: #fafafa;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px 15px;
+      background: #fafafa;
+      text-align: left;
+    }
+    header, section {
+      margin-bottom: 100px;
+    }
+    ul {
+      display: inline-block;
+    }
+    li {
+      text-align: left;
+    }
+    table {
+      margin: auto;
+      width: 80%;
+    }
+    h1 {
+      position: relative;
+      font-size: 5em;
+    }
+    h1 > small {
+      position: absolute;
+      font-size: 0.15em;
+    }
+      h1::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 1em;
+        background: red;
+        transform: translate(-50%, -50%);
+        perspective: 1000;
+        z-index: -1;
+      }
+  </style>
+  <script src="junits.js"></script>
+</head>
+<body>
+  <header>
+    <h1>jUnits<small>v0.1.0</small></h1>
+    <p>日本語に特化した軽量単位ユーティリティライブラリ</p>
+    <ul>
+      <li><a href="#install">インストール</a></li>
+      <li><a href="#usage">使い方</a></li>
+      <li><a href="#datetime">日付・時間</a></li>
+      <li><a href="#number">数字・通貨</a></li>
+      <li><a href="#area">面積</a></li>
+    </ul>
+  </header>
+
+  <section id="install">
+    <h2>インストール</h2>
+    <code>
+      npm install junits
+    </code>
+  </section>
+
+  <section id="usage">
+    <h2>使い方</h2>
+    <code>
+      import * as jUnits from 'junits';
+    </code>
+  </section>
+
+  <section id="datetime">
+    <h2>日付・時間</h2>
+    <h3>書式</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().seireki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().seireki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().wareki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().wareki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().tanWareki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().tanWareki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().alphaWareki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().alphaWareki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().tsuki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().tsuki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().hi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().hi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().yobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().yobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().tanYobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().tanYobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().ji().moji();</td>
+        <td><script>document.write(jUnits.hizuke().ji().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().fun().moji();</td>
+        <td><script>document.write(jUnits.hizuke().fun().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().tanYobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().tanYobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().seireki().tsuki().moji();</td>
+        <td><script>document.write(jUnits.hizuke().seireki().tsuki().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().tsuki().hi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().tsuki().hi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().seireki().tsuki().hi().tanYobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().seireki().tsuki().hi().tanYobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().wareki().tsuki().hi().haku().yobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().wareki().tsuki().hi().haku().yobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().seireki().tsuki().hi().haku().ji().fun().tanYobi().moji();</td>
+        <td><script>document.write(jUnits.hizuke().seireki().tsuki().hi().haku().ji().fun().tanYobi().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([1989, 1, 8]).wareki().tsuki().hi().niketa().moji();</td>
+        <td><script>document.write(jUnits.hizuke([1989, 1, 8]).wareki().tsuki().hi().niketa().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke(['H', 1, 1, 8]).seireki().tsuki().niketa().hi().niketa().moji();</td>
+        <td><script>document.write(jUnits.hizuke(['H', 1, 1, 8]).seireki().tsuki().niketa().hi().niketa().moji());</script></td>
+      </tr>
+    </table>
+
+    <h3>比較</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().ha([2000, 1, 1]).yoriMae();</td>
+        <td><script>document.write(jUnits.hizuke().ha([2100, 0, 1]).yoriMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().ha([2000, 1, 1]).yoriAto();</td>
+        <td><script>document.write(jUnits.hizuke().ha([2000, 1, 1]).yoriAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([2000, 1, 1]).toOnaji();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([2000, 1, 1]).toOnaji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([2001, 1, 1]).toOnajiKaMae();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([2001, 1, 1]).toOnajiKaMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).toOnajiKaAto();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).toOnajiKaAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).to([2001, 1, 1]).noAida();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).to([2001, 1, 1]).noAida());</script></td>
+      </tr>
+    </table>
+
+    <h3>データ操作</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().atai();</td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke().atai(), null, 2));</script></pre></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([1989, 1, 8]).wareki().atai();</td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke([1989, 1, 8]).atai(), null, 2));</script></pre></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke(['H', 1, 1, 8, 1, 2, 3]).seireki().atai();</td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke(['H', 1, 1, 8, 1, 2, 3]).atai(), null, 2));</script></pre></td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="number">
+    <h2>数字・通貨</h2>
+    <p>開発中</p>
+  </section>
+
+  <section id="area">
+    <h2>面積</h2>
+    <p>開発中</p>
+  </section>
+
+  <footer>
+    <small>&copy;2019 ExoDev</small>
+  </footer>
+</body>
+</html>
