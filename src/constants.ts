@@ -1,8 +1,9 @@
-interface IGengo {
+export type GengoAlpha = 'R' | 'H' | 'S' | 'T' | 'M';
+export interface IGengo {
   start: number[];
   full: string;
   short: string;
-  alpha: string;
+  alpha: GengoAlpha;
 }
 
 type Yobi = string;

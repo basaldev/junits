@@ -67,6 +67,7 @@ describe('hizuke', () => {
       haku: expect.any(Function),
       niketa: expect.any(Function),
       moji: expect.any(Function),
+      atai: expect.any(Function),
       ha: expect.any(Function)
     };
   });
@@ -148,6 +149,23 @@ describe('hizuke', () => {
 
   it('should call moji/output', () => {
     expect(hizuke(date1, ['1月', '2日']).moji()).toBe('1月2日');
+  });
+
+  it('should call atai/value', () => {
+    expect(hizuke(date1).atai()).toEqual({
+      byo: 20,
+      fun: 16,
+      hi: 7,
+      ji: 13,
+      seireki: 2019,
+      tsuki: 5,
+      wareki: {
+        alphaGengo: 'R',
+        gengo: '令和',
+        nen: 1,
+        tanGengo: '令'
+      }
+    });
   });
 
   it('should call ha', () => {

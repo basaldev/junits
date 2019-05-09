@@ -3,6 +3,7 @@
 exports[`hizuke should call alphaWareki 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -23,6 +24,7 @@ Object {
 exports[`hizuke should call byo 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -43,6 +45,7 @@ Object {
 exports[`hizuke should call fun 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -63,6 +66,7 @@ Object {
 exports[`hizuke should call haku 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -83,6 +87,7 @@ Object {
 exports[`hizuke should call hi 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -103,6 +108,7 @@ Object {
 exports[`hizuke should call ji 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -123,6 +129,7 @@ Object {
 exports[`hizuke should call niketa/fixDigit 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -143,6 +150,7 @@ Object {
 exports[`hizuke should call seireki 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -163,6 +171,7 @@ Object {
 exports[`hizuke should call tanWareki 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -183,6 +192,7 @@ Object {
 exports[`hizuke should call tanYobi 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -203,6 +213,7 @@ Object {
 exports[`hizuke should call tsuki 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -223,6 +234,7 @@ Object {
 exports[`hizuke should call wareki 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -243,6 +255,7 @@ Object {
 exports[`hizuke should call yobi 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,
@@ -263,6 +276,7 @@ Object {
 exports[`hizuke should return proper members 1`] = `
 Object {
   "alphaWareki": Any<Function>,
+  "atai": Any<Function>,
   "byo": Any<Function>,
   "fun": Any<Function>,
   "ha": Any<Function>,

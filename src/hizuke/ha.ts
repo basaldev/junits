@@ -1,3 +1,4 @@
+import converToDate, { Datetime } from './convertToDate';
 import yoriMae from './yoriMae';
 import yoriAto from './yoriAto';
 import toOnaji from './toOnaji';
@@ -12,6 +13,6 @@ export default function ha(date1: Date, date2: Date) {
     toOnaji: () => toOnaji(date1, date2),
     toOnajiKaMae: () => toOnajiKaMae(date1, date2),
     toOnajiKaAto: () => toOnajiKaAto(date1, date2),
-    to: (date3: Date) => ({ noAida: () => noAida(date1, date2, date3) }),
+    to: (date3: Datetime) => ({ noAida: () => noAida(date1, date2, converToDate(date3)) })
   };
 }

@@ -164,8 +164,44 @@
         <td><script>document.write(jUnits.hizuke().seireki().tsuki().hi().haku().ji().fun().tanYobi().moji());</script></td>
       </tr>
       <tr>
-        <td>jUnits.hizuke(new Date(1989, 0, 8)).wareki().tsuki().niketa().hi().niketa().moji();</td>
-        <td><script>document.write(jUnits.hizuke(new Date(1989, 0, 8)).wareki().tsuki().niketa().hi().niketa().moji());</script></td>
+        <td>jUnits.hizuke([1989, 1, 8]).wareki().tsuki().hi().niketa().moji();</td>
+        <td><script>document.write(jUnits.hizuke([1989, 1, 8]).wareki().tsuki().hi().niketa().moji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke(['H', 1, 1, 8]).seireki().tsuki().niketa().hi().niketa().moji();</td>
+        <td><script>document.write(jUnits.hizuke(['H', 1, 1, 8]).seireki().tsuki().niketa().hi().niketa().moji());</script></td>
+      </tr>
+    </table>
+
+    <h3>比較</h3>
+    <table>
+      <tr>
+        <th>使用例</th>
+        <th>出力</th>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().ha([2000, 1, 1]).yoriMae();</td>
+        <td><script>document.write(jUnits.hizuke().ha([2100, 0, 1]).yoriMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke().ha([2000, 1, 1]).yoriAto();</td>
+        <td><script>document.write(jUnits.hizuke().ha([2000, 1, 1]).yoriAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([2000, 1, 1]).toOnaji();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([2000, 1, 1]).toOnaji());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([2001, 1, 1]).toOnajiKaMae();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([2001, 1, 1]).toOnajiKaMae());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).toOnajiKaAto();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).toOnajiKaAto());</script></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).to([2001, 1, 1]).noAida();</td>
+        <td><script>document.write(jUnits.hizuke([2000, 1, 1]).ha([1999, 1, 1]).to([2001, 1, 1]).noAida());</script></td>
       </tr>
     </table>
 
@@ -176,30 +212,12 @@
         <th>出力</th>
       </tr>
       <tr>
-        <td>jUnits.hizuke().ha(new Date(2000, 0, 1)).yoriMae();</td>
-        <td><script>document.write(jUnits.hizuke().ha(new Date(2100, 0, 1)).yoriMae());</script></td>
+        <td>jUnits.hizuke().atai();</td>
+        <td>
+          <pre><script>document.write(JSON.stringify(jUnits.hizuke().atai(), null, 2));</script></pre>
+        </td>
       </tr>
       <tr>
-        <td>jUnits.hizuke().ha(new Date(2000, 0, 1)).yoriAto();</td>
-        <td><script>document.write(jUnits.hizuke().ha(new Date(2000, 0, 1)).yoriAto());</script></td>
-      </tr>
-      <tr>
-        <td>jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(2000, 0, 1)).toOnaji();</td>
-        <td><script>document.write(jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(2000, 0, 1)).toOnaji());</script></td>
-      </tr>
-      <tr>
-        <td>jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(2001, 0, 1)).toOnajiKaMae();</td>
-        <td><script>document.write(jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(2001, 0, 1)).toOnajiKaMae());</script></td>
-      </tr>
-      <tr>
-        <td>jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).toOnajiKaAto();</td>
-        <td><script>document.write(jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).toOnajiKaAto());</script></td>
-      </tr>
-      <tr>
-        <td>jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).to(new Date(2001, 0, 1)).noAida();</td>
-        <td><script>document.write(jUnits.hizuke(new Date(2000, 0, 1)).ha(new Date(1999, 0, 1)).to(new Date(2001, 0, 1)).noAida());</script></td>
-      </tr>
-    </table>
   </section>
 
   <section id="number">

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`atai should return members 1`] = `
+Object {
+  "byo": 20,
+  "fun": 16,
+  "hi": 7,
+  "ji": 13,
+  "seireki": 2019,
+  "tsuki": 5,
+  "wareki": Object {
+    "alphaGengo": "R",
+    "gengo": "令和",
+    "nen": 1,
+    "tanGengo": "令",
+  },
+}
+`;
