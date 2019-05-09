@@ -66,7 +66,7 @@
 </head>
 <body>
   <header>
-    <h1>jUnits<small>v0.0.2</small></h1>
+    <h1>jUnits<small>v0.1.0</small></h1>
     <p>日本語に特化した軽量単位ユーティリティライブラリ</p>
     <ul>
       <li><a href="#install">インストール</a></li>
@@ -205,7 +205,7 @@
       </tr>
     </table>
 
-    <h3>変換</h3>
+    <h3>データ操作</h3>
     <table>
       <tr>
         <th>使用例</th>
@@ -213,11 +213,17 @@
       </tr>
       <tr>
         <td>jUnits.hizuke().atai();</td>
-        <td>
-          <pre><script>document.write(JSON.stringify(jUnits.hizuke().atai(), null, 2));</script></pre>
-        </td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke().atai(), null, 2));</script></pre></td>
       </tr>
       <tr>
+        <td>jUnits.hizuke([1989, 1, 8]).wareki().atai();</td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke([1989, 1, 8]).atai(), null, 2));</script></pre></td>
+      </tr>
+      <tr>
+        <td>jUnits.hizuke(['H', 1, 1, 8, 1, 2, 3]).seireki().atai();</td>
+        <td><pre><script>document.write(JSON.stringify(jUnits.hizuke(['H', 1, 1, 8, 1, 2, 3]).atai(), null, 2));</script></pre></td>
+      </tr>
+    </table>
   </section>
 
   <section id="number">
