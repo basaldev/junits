@@ -6,4 +6,4 @@
 
 ドキュメント
 
-[https://exodevhub.github.io/junits/docs/](https://exodevhub.github.io/junits/docs/)
+[https://exodevhub.github.io/junits/dist/](https://exodevhub.github.io/junits/dist/)
