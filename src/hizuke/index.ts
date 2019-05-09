@@ -40,7 +40,7 @@ export default function hizuke(date: Date = new Date(), state = []) {
     byo: (unit?: string) => setState(byo(date, unit)),
     haku: (value?: string) => setState(haku(value)),
     niketa: () => fixDigit(2),
-    ijo: output,
+    moji: output,
     ha: (date2: Date) => ha(date, date2)
   };
 }

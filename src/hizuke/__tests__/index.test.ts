@@ -66,7 +66,7 @@ describe('hizuke', () => {
       byo: expect.any(Function),
       haku: expect.any(Function),
       niketa: expect.any(Function),
-      ijo: expect.any(Function),
+      moji: expect.any(Function),
       ha: expect.any(Function)
     };
   });
@@ -146,8 +146,8 @@ describe('hizuke', () => {
     expect(myHizuke2).toHaveBeenLastCalledWith(date1, ['令和02年']);
   });
 
-  it('should call ijo/output', () => {
-    expect(hizuke(date1, ['1月', '2日']).ijo()).toBe('1月2日');
+  it('should call moji/output', () => {
+    expect(hizuke(date1, ['1月', '2日']).moji()).toBe('1月2日');
   });
 
   it('should call ha', () => {
