@@ -9,7 +9,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/dist',
     filename: 'junits.js',
     library: 'jUnits',
     libraryTarget: 'umd',
@@ -40,5 +40,6 @@ module.exports = {
     inline: true,
     historyApiFallback: true,
     contentBase: path.join(__dirname, 'docs'),
+    openPage: '/docs'
   }
 };
