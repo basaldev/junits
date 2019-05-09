@@ -9,5 +9,12 @@
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
     "moduleResolution": "node"
-  }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**"
+  ]
 }

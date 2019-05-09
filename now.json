@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "junits",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "." }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/dist/(.*)",
+      "dest": "/dist/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/docs"
+    }
+  ]
+}
