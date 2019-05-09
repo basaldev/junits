@@ -1,6 +1,6 @@
 {
   "name": "junits",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Utility for all Japanese units",
   "main": "dist/junits.js",
   "scripts": {
